@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M4CK Files - Password</title>
+    <title>M4CK Files - Repository</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,18 +19,16 @@
             </ul>
         </nav>
     </header>
-	<section class="password-section">
-        <div class="password-form">
-            <form id="passwordForm">
-                <input type="password" id="password" name="password" placeholder="Enter Password">
-                <button type="submit">Unlock Vault</button>
-            </form>
-            <p class="password-hint">Hint: M4CK</p>
-            <p id="passwordError" class="hidden">Incorrect password. Please try again.</p> <!-- Aviso de senha incorreta -->
-        </div>
+
+    <section class="repository-section">
+        <h1>Repository</h1>
+        <form action="uploads.php" method="POST" enctype="multipart/form-data">
+            <input type="file" name="fileInput">
+            <button type="submit" name="submit">Upload File</button>
+        </form>
     </section>
 
-   <footer class="footer">
+    <footer class="footer">
         <div class="footer-content">
             <div class="contact-info">
                 <p>Email: m4ck.1nt05h@gmail.com</p>
