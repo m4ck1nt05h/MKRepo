@@ -22,7 +22,7 @@
 
     <section class="repository-section">
         <h1>Repository</h1>
-        <form id="uploadForm" enctype="multipart/form-data">
+        <form id="uploadForm" enctype="multipart/form-data" action="/upload" method="post"> <!-- Adicionando a ação correta -->
             <input type="file" id="fileInput" name="fileInput">
             <button type="submit">Upload File</button>
         </form>
