@@ -28,3 +28,31 @@ document.getElementById("uploadForm").addEventListener("submit", function(event)
     // Adicionar o link à lista de arquivos
     document.getElementById("fileList").appendChild(link);
 });
+const express = require('express');
+const multer = require('multer');
+const path = require('path');
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+// Configuração do multer para salvar os arquivos na pasta "repository"
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        cb(null, 'repository');
+    },
+    filename: function (req, file, cb) {
+        cb(null, file.originalname);
+    }
+});
+
+const upload = multer({ storage: storage });
+
+// Rota para lidar com o upload de arquivos
+app.post('/upload', upload.single('fileInput'), (req, res) => {
+    res.send('Arquivo enviado com sucesso!');
+});
+
+app.listen(PORT, () => {
+    console.log(`Servidor rodando na porta ${PORT}`);
+});
+
