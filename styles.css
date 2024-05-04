@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #212121;
+    color: #FFF;
+}
+
+header {
+    background-color: #000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #00FF00;
+}
+
+.hero {
+    background-image: url('pipboy_background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFF;
+}
+
+.hero-content {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00FF00;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #009900;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.feature {
+    text-align: center;
+    max-width: 300px;
+    margin-bottom: 40px;
+}
+
+.feature img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.feature h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1em;
+}
+
+.password-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.password-form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.password-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.password-form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #00FF00;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.password-form button {
+    padding: 10px 20px;
+    background-color: #00FF00;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.password-form button:hover {
+    background-color: #009900;
+}
+
+.password-hint {
+    font-size: 0.8em;
+    color: #999;
+}
+
+.footer {
+    background-color: #212121;
+    color: #FFF;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-info, .social-links {
+    margin: 10px;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #212121;
+    color: #FFF;
+}
+
+.password-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.password-form, #repository {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.password-form form, #uploadForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.password-form input[type="password"], #fileInput {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #00FF00; /* Pip-Boy green color */
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.password-form button, #uploadForm button {
+    padding: 10px 20px;
+    background-color: #00FF00; /* Pip-Boy green color */
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.password-form button:hover, #uploadForm button:hover {
+    background-color: #009900; /* Darker shade of Pip-Boy green */
+}
+
+.password-hint {
+    font-size: 0.8em;
+    color: #999;
+}
+
+.hidden {
+    display: none;
+}
+
+#repository {
+    margin-top: 50px;
+}
+
+#fileList {
+    text-align: left;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#fileList p {
+    margin: 5px 0;
+}
